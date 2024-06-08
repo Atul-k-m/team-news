@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/assets/pokemon-in-the-wild.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#login-section {
+    width: 60%;
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h2 {
+    color: #ffcc00;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    text-align: center;
+}
+
+#social-login {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#social-login button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#google-login {
+    background: #db4437;
+    color: white;
+}
+
+#facebook-login {
+    background: #3b5998;
+    color: white;
+}
+
+#microsoft-login {
+    background: #0078d4;
+    color: white;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#login-form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+#options a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+#login-button {
+    padding: 10px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+#footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+#footer a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+#register-section {
+    width: 40%;
+    background: #eee;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#register-section h2 {
+    color: #ffcc00;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#register-section p {
+    color: #555;
+    text-align: center;
+}
+
+#sign-up-button {
+    padding: 10px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}

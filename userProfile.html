@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        .header a.logout {
+            float: right;
+            margin-top: -45px;
+            margin-right: 30px;
+            cursor: pointer;
+        }
+        .profile-info {
+            text-align: center;
+            padding: 20px;
+        }
+        .profile-info img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .profile-info h2 {
+            margin: 10px 0 0;
+        }
+        .buttons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .buttons a {
+            text-decoration: none;
+            color: #333;
+            background: #e2e2e2;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .content div {
+            width: 45%;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .back-button {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .back-button a {
+            text-decoration: none;
+            color: #fff;
+            background: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>User Profile</h1>
+            <a id="logout" class="logout">Logout</a>
+        </div>
+    </header>
+    <div class="profile-info">
+        <img src="user-icon.png" alt="User Icon">
+        <h2>John Doe</h2>
+    </div>
+    <div class="buttons">
+        <a href="#liked-articles">Liked Articles</a>
+        <a href="#bookmarks">Bookmarks</a>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div id="liked-articles">
+                <h3>Liked Articles</h3>
+                <ul>
+                    <li>Article 1</li>
+                    <li>Article 2</li>
+                    <li>Article 3</li>
+                </ul>
+            </div>
+            <div id="bookmarks">
+                <h3>Bookmarks</h3>
+                <ul>
+                    <li>Bookmark 1</li>
+                    <li>Bookmark 2</li>
+                    <li>Bookmark 3</li>
+                </ul>
+            </div>
+        </div>
+        <a href="settings.html">Settings</a>
+    </div>
+    <div class="back-button">
+        <a href="index.html">Back to Home</a>
+    </div>
+
+    <script>
+        document.getElementById('logout').addEventListener('click', function() {
+            // Remove the JWT token from localStorage
+            localStorage.removeItem('token');
+            // Redirect to the login page
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>

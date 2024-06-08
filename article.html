@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <button id="summarizeButton" class="action-button">Summarize</button>
+            <button id="factCheckButton" class="action-button">Fact Check</button>
+            <button id="backButton" class="action-button">Back</button>
+            <button id="bookmarkButton" class="action-button">Bookmark</button>
+            <button id="shareButton" class="action-button">Share</button>
+        </header>
+        
+        <main id="mainContent">
+            <article id="articleContent"></article>
+            <div id="likeDislikeContainer">
+                <button id="likeButton" class="action-button">Like (<span id="likeCount">0</span>)</button>
+                <button id="dislikeButton" class="action-button">Dislike (<span id="dislikeCount">0</span>)</button>
+            </div>
+        </main>
+        <section id="commentsSection">
+            <h2>Comments</h2>
+            <div id="commentsList"></div>
+            <div class="comment-form">
+                <textarea id="commentInput" placeholder="Add a comment"></textarea>
+                <button id="submitCommentButton" class="action-button">Submit</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Twitter Embed Script -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="/js/article.js"></script>
+</body>
+</html>
